@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "geek-web-man"
+version = "0.0.1.0"
+description = "极客营Web助手，执行网站性能测试、批量请求URL等任务并生成运行报告"
+authors = ["FifiLyu <fifilyu@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/geekcampchina/geek-web-man"
+repository = "https://github.com/geekcampchina/geek-web-man"
+documentation = "https://github.com/geekcampchina/geek-web-man"
+
+classifiers = [
+    'Intended Audience :: Developers',
+    'Operating System :: OS Independent',
+    'Programming Language :: Python',
+    'Programming Language :: Python :: 3',
+    'Topic :: System :: System Shells'
+]
+
+packages = [
+    { include = "geek_web_man.py" },
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8.5 <4.0.0"
+pytest = ">=7.4.1"
+requests = ">=2.31.0"
+happy-python = ">=0.4.7"
+validators = ">=0.22.0"
+beautifulsoup4 = ">=4.12.2"
+lxml = ">=4.9.3"
+
+[tool.poetry.scripts]
+geek-web-man = "geek_web_man:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,5 @@
+requests
+happy_python
+validators
+beautifulsoup4
+lxml
